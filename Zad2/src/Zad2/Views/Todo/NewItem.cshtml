@@ -1,0 +1,24 @@
+﻿@using Models
+@model Zad2.Models.TodoViewModels.AddTodoViewModel
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <title>Add New Todo</title>
+</head>
+
+<body>
+    <h1>Add new todo</h1>
+    <div>
+        <form asp-action="NewItem" method="post">
+            Text: <input asp-for="Text"/> <span asp-validation-for="Text"></span> <br/>
+            <input type="submit" />
+        </form>
+    </div>
+</body>
+
+</html>
+
